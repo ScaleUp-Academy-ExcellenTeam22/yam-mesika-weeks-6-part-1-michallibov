@@ -9,8 +9,7 @@ def count_words(text: str) -> dict:
     :return: The dictionary of the string which contains all the words from the text and their length. Each word
     appears only once.
     """
-    word_length_dict = {word: len(word) for word in re.sub(r'[^\w\s]', '', text).lower().split(" ") if word.isalpha()}
-    return word_length_dict
+    return {word: len(word) for word in re.sub(r'[^\w\s]', '', text).lower().split(" ") if word.isalpha()}
 
 
 if __name__ == '__main__':
