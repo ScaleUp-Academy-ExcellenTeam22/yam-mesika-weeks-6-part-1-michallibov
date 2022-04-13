@@ -6,8 +6,7 @@ def words_length(sentence: str) -> list:
     :return: A list of the lengths of each word. The first word's length in the sentence will be in the first cell of
     the list, the second word's length in the sentence in the second cell, etc.
     """
-    words_len = [len(word) for word in sentence.split(" ")]
-    return words_len
+    return [len(word) for word in sentence.split(" ")]
 
 
 if __name__ == '__main__':
